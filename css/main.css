@@ -9,8 +9,15 @@
 /* Estilos gerais do site */
 body {
   color: var(--text-color);
-  background: #f9f9f9;
+  background: #252525;
   font-family: 'Arial', sans-serif;
+}
+
+header {
+  border: 2px red solid;
+  position: fixed;
+  width: 100%;
+  margin: 0;
 }
 
 .header-nav {
@@ -18,12 +25,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-md) var(--spacing-lg);
-  background: #fff;
+  background: #f7f7f7;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav .logo img {
-  height: 40px;
+  height: 70px;
 }
 
 .header-nav ul {
@@ -56,9 +63,19 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-md);
   margin: var(--spacing-lg) 0;
+}
+
+section.mapa-container {
+  padding: var(--spacing-lg);
+  text-align: center;
+  border-radius: 8px;
+}
+
+section.mapa-container iframe{
+  border-radius: 8px;
 }
 
 .footer-content {
@@ -74,6 +91,10 @@ body {
 .footer-content ul {
   list-style: none;
   padding: 0;
+}
+
+footer p {
+  text-align: center;
 }
 
 .footer-content a {
