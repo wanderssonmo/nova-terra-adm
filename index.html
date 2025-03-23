@@ -11,20 +11,24 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  
+  <!--
   <header>
-    <!-- Incluindo o header como texto estático -->
+     Incluindo o header como texto estático
     <nav class="header-nav">
       <a href="/" class="logo">
         <img src="assets/img/logo/logo_cabecalho.png" alt="Logo Nova Terra Adm">
       </a>
       <ul>
         <li><a href="#">Todas as categorias</a></li>
+        <li><a href="#">Sobre</a></li>
         <li><a href="#destaques">Lotes e Chácaras</a></li>
         <li><a href="#teste">Contato</a></li>
       </ul>
     </nav>
   </header>
-
+-->
+  <div id="header"></div>
   <main>
     <!-- Seção Hero -->
     <section class="hero" style="background-color: aquamarine;">
@@ -54,9 +58,8 @@
       <div class="card-container">
         <div class="card">
           <img src="assets/img/loteamento/nova-brasilia-1ao3/foto-de-capa.jpg" alt="Lote à venda">
-          <h3>Lote Nova Brasília</h3>
+          <h3>loteamento Nova Brasília</h3>
           <p>Perfeito para construir sua casa.</p>
-          <p>A partir de: R$ 150.000</p>
           <a href="http://tomcat.aws.sistemasivi.com.br:8880/sivi_mapas_incorporacaosolar/principal.jsp?id=5bf214661679b78e08708d3e2054cd7c&funcao=visualizarMapas&loteamento=1" target="_blank"><button class="btn btn--secondary">Ver mapa</button></a>
           <!--<button class="btn btn--secondary">Ver mapa</button> -->
         </div>
@@ -64,7 +67,6 @@
           <img src="assets/img/chacara/chacara1.jpg" alt="Chácara à venda">
           <h3>Chacreamento Nova Brasília</h3>
           <p>Com pomar e área de lazer.</p>
-          <p>A partir de: R$ 50.000</p>
           <button class="btn btn--secondary">Ver mapa</button>
         </div>
         <div class="card">
@@ -158,5 +160,6 @@
   </a>
   <!-- Incluindo JS diretamente -->
   <script src="js/main.js" defer></script>
+  <script src="js/modules/importarHeader.js"></script>
 </body>
 </html>
