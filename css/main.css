@@ -14,7 +14,6 @@ body {
 }
 
 header {
-  border: 2px red solid;
   position: fixed;
   width: 100%;
   margin: 0;
@@ -30,7 +29,7 @@ header {
 }
 
 .header-nav .logo img {
-  height: 70px;
+  height: 90px;
 }
 
 .header-nav ul {
@@ -47,6 +46,29 @@ header {
 .header-nav ul li a.active {
   color: #ff0000; /* Destacar a página ativa (importarHeader.css) */
   font-weight: bold;
+}
+
+header nav .icone-rede-social {
+  display: flex;
+}
+
+header nav .botao-social {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+}
+
+/* Efeito hover */
+header .botao-social:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .hero {
@@ -128,20 +150,25 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+  .header-nav {
+    display: flex;
+    /* gap: var(--spacing-sm); */
+  }
+
   .hero, .destaques, .search-bar {
     padding: var(--spacing-md);
   }
+  
   .hero {
     height: 300px;
   }
-  .header-nav {
-    flex-direction: column;
-    gap: var(--spacing-sm);
-  }
+
   .header-nav ul {
-    flex-direction: column;
+    /* flex-direction: column; */ 
     text-align: center;
   }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
