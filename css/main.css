@@ -225,10 +225,6 @@ footer p {
 @media (max-width: 768px) {
 
 /* Estilo do logo */
-header .logo img {
-  height: 90px;
-}
-
   .hamburger {
     display: block !important;/* Exibe o ícone do hambúrguer */
   }
