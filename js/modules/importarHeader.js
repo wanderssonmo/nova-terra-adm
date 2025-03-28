@@ -1,4 +1,4 @@
-fetch('templates/header.html')
+fetch('header.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro ao carregar header.html: ' + response.statusText);
