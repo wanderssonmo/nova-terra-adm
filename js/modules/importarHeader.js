@@ -60,3 +60,5 @@ fetch('header.html')
     console.error('Erro ao carregar o header:', error);
     document.getElementById('header').innerHTML = '<p style="color: red;">Erro ao carregar o header.</p>';
   });
+
+  
