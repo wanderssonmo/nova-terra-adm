@@ -55,10 +55,20 @@ fetch('header.html')
 
     // Atualizar ao redimensionar
     window.addEventListener('resize', updateMenuState);
+
+    // -------------------------
+    // 🟢 DESTACAR A PÁGINA ATUAL
+    // -------------------------
+    const currentPage = window.location.pathname.split("/").pop() || "index.html"; // Se estiver na raiz, considera "index.html"
+
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+
   })
   .catch(error => {
     console.error('Erro ao carregar o header:', error);
     document.getElementById('header').innerHTML = '<p style="color: red;">Erro ao carregar o header.</p>';
   });
-
-  
