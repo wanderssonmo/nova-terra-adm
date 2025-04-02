@@ -10,7 +10,8 @@
 :root {
     --primary-color: #D93A2B;
     --secondary-color: #BF6860;
-    --text-color: #D99F59;
+    --text-color-link-menu:#D99F59;
+    --text-color: #2c2a27;
     --spacing-sm: 0.3rem;
     --spacing-md: 0.5rem;
     --spacing-lg: 1rem;
