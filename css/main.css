@@ -21,7 +21,7 @@ body.unloading {
 
 body {
   color: var(--text-color);
-  background: #e6e4df;
+  background: #e6dfdf;
   font-family: 'Arial', sans-serif;
   padding-top: 118px;
 }
@@ -43,9 +43,8 @@ header {
   align-items: center;
   padding: 5px 20px;
   height: 100px;
-  background: #f7f7f7;
+  background-color: #fff;
   box-shadow: 0 2px 5px rgba(8, 8, 8, 0.39);
-  
 }
 
 /* Estilo do menu */
@@ -161,10 +160,14 @@ header .nav-menu li:hover {
   flex-direction: column;
   align-items: center;
   padding: var(--spacing-lg);
-  background: url('../assets/img/office-bg.jpg') no-repeat center/cover;
+  /*background: url('../assets/img/office-bg.jpg') no-repeat center/cover;*/
+  background-image: url(/assets/img/office-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: rgb(245, 245, 245);
   text-align: center;
-  height: 400px;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -216,22 +219,62 @@ footer p {
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   width: 60px;
   height: 60px;
-  background: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  /* background: #25d366; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .whatsapp-icon img {
   width: 40px;
   height: 40px;
 }
+
+.whatsapp-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.whatsapp-icon {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.whatsapp-icon {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/*  👇  ///  RESPOSIVIDADE  ✔ */
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -260,7 +303,6 @@ footer p {
     top: 100%; /* Abaixo do header */
     left: 0;
     width: 100%;
-    background-color: #fff;
     flex-direction: initial;
     padding: 5px;
     margin-top: 18px;
@@ -305,5 +347,27 @@ footer p {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .whatsapp-icon {
+    width: 12vw;
+    height: 12vw;
+    max-width: 60px;
+    max-height: 60px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .whatsapp-icon img {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    animation: pulse 2s infinite ease-in-out; /* Ajuste para ser mais suave em mobile */
+  }
+  .whatsapp-icon img {
+    width: 35px;
+    height: 35px;
   }
 }
