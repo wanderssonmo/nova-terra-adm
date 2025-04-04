@@ -161,7 +161,7 @@ header .nav-menu li:hover {
   align-items: center;
   padding: var(--spacing-lg);
   /*background: url('../assets/img/office-bg.jpg') no-repeat center/cover;*/
-  background-image: url(https://raw.githubusercontent.com/wanderssonmo/nova-terra-adm/refs/heads/main/assets/img/imagem_home.jpg);
+  background-image: url(/_moverDep-imagem_home.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
