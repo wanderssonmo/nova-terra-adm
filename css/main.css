@@ -21,7 +21,7 @@ body.unloading {
 
 body {
   color: var(--text-color);
-  background: #e6dfdf;
+  background: #e6dfdf85;
   font-family: 'Arial', sans-serif;
   padding-top: 118px;
 }
@@ -43,7 +43,7 @@ header {
   align-items: center;
   padding: 5px 20px;
   height: 100px;
-  background-color: #fdfdfd;
+  background-color: #FEFEFE;
   box-shadow: 0 2px 5px rgba(8, 8, 8, 0.39);
 }
 
@@ -113,7 +113,7 @@ header nav .nav-menu li {
 
 
 .header-nav .nav-menu ul li a.active {
-  color: #D93A2B !important; /* Vermelho para destacar */
+  color: #C7473C !important; /* Vermelho para destacar */
   font-weight: bold !important;
   background-color: #d99f5967 !important;
   box-shadow: 0px 1px 5px rgba(153, 1, 1, 0.63); 
@@ -146,7 +146,7 @@ header .nav-menu li:hover {
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color:#D99F59;
+  color:#D09D5B;
   padding: 5px;
 }
 
@@ -163,7 +163,7 @@ header .nav-menu li:hover {
   /*background: url('../assets/img/office-bg.jpg') no-repeat center/cover;*/
   background-image: url(/nova-terra-adm/assets/img/imagem_home.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   color: rgb(245, 245, 245);
   text-align: center;
@@ -313,8 +313,9 @@ footer p {
     flex-direction: initial;
     padding: 5px;
     margin-top: 18px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
     z-index: 1000;
+    background-color: #FEFEFE;
   }
 
   .nav-menu.active {
