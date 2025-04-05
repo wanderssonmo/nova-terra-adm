@@ -187,7 +187,7 @@ section.hero h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-md);
-  margin: var(--spacing-lg) 0;
+  margin: var(--spacing-lg);
 }
 
 section.mapa-container {
@@ -200,29 +200,91 @@ section.mapa-container iframe{
   border-radius: 8px;
 }
 
-.footer-content {
+/* 👇 ===================================== FOOTER =======================*/
+/* Estilo geral do footer */
+.footer {
+  background-color: #FEFEFE;
+  color: #070303;
+  padding: 40px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  background: #333;
-  color: white;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.footer-content ul {
-  list-style: none;
-  padding: 0;
+.footer-section {
+  flex: 1 1 200px;
 }
 
-footer p {
-  text-align: center;
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #D09D5B;
 }
 
-.footer-content a {
-  color: #fff;
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #181414;
+}
+
+.footer-section a {
   text-decoration: none;
+  transition: color 0.3s;
 }
+
+.footer-section a:hover {
+  color: #C7473C;
+}
+
+/* Redes sociais */
+.footer-section .icons a {
+  margin-right: 10px;
+  color: #D09D5B;
+  font-size: 18px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-section .icons a:hover {
+  transform: scale(1.2);
+  color: #C7473C;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-bottom .dev-credit {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-bottom .dev-credit a {
+  color: #05b4ac;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom .dev-credit a:hover {
+  color: hsl(241, 97%, 49%);
+}
+/* 👆 FOOTER */
+
 
 .whatsapp-icon {
   position: fixed;
@@ -249,6 +311,21 @@ footer p {
   opacity: 0.9;
   
 }
+
+
+/* 👇 PÁGINA CONTATO */
+.sobre-conteiner {
+  width: 800px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* 👆 PÁGINA CONTATO */
 
 @keyframes fadeIn {
   from {
@@ -352,11 +429,6 @@ footer p {
     text-align: center;
   }
 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .whatsapp-icon {
     width: 12vw;
     height: 12vw;
@@ -378,4 +450,21 @@ footer p {
     width: 35px;
     height: 35px;
   }
+
+  /* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section .icons {
+    justify-content: center;
+  }
+
+}
 }
