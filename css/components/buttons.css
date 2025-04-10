@@ -19,12 +19,12 @@
   }
   
   .btn--secondary {
-    background-color: var(--secondary-color);
+    background-color: #D09D5B;
     color: white;
   }
   
   .btn--secondary:hover {
-    background-color: #5a6268;
+    background-color: #C7473C;
   }
   
   .btn--search {

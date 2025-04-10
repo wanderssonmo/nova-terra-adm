@@ -178,8 +178,9 @@ section.hero h1 {
   text-shadow: 2px 2px 4px #000000;
 }
 
-.destaques {
+.imoveis-container {
   padding: var(--spacing-lg);
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -267,7 +268,7 @@ section.mapa-container iframe{
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  border-top: 1px solid #7e7878;
+  border-top: 1px solid #8d8888;
   padding-top: 15px;
   font-size: 13px;
   color: #777;
@@ -286,7 +287,7 @@ section.mapa-container iframe{
 }
 
 .footer-bottom .dev-credit a:hover {
-  color: hsl(241, 97%, 49%);
+  color: #3f729b;
 }
 /* 👆 FOOTER */
 
@@ -475,8 +476,5 @@ section.mapa-container iframe{
   .footer-section .icons {
     justify-content: center;
   }
-
-
-  
-
+}
 }
