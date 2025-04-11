@@ -10,12 +10,19 @@
   }
   
   .btn--primary {
-    background-color: var(--primary-color);
+    font-size: 20px;
+    background-color: #C7473C;
     color: white;
+    margin-bottom: 600px;
+    text-decoration: none;
   }
   
   .btn--primary:hover {
-    background-color: #0056b3;
+    background-color: #fefefe;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: #C7473C;
+    transition: color 0.3s, box-shadow 0.3s;
+    
   }
   
   .btn--secondary {

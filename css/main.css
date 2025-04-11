@@ -172,9 +172,18 @@ header .nav-menu li:hover {
 }
 
 section.hero h1 {
+  color: #f7f6f5;
+  font-size: 2em;
+  margin: auto;
+  margin-top: 500px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+section.hero h2 {
   color: #D99F59;
   font-size: 1.5em;
-  margin-top: -145px;
+  margin-bottom: 40px;
+  margin-top: 30px;
   text-shadow: 2px 2px 4px #000000;
 }
 

@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- faz parte do Font Awesome, uma biblioteca de ícones. Se a biblioteca não estiver carregada no seu projeto, os ícones não aparecerão.-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="/css/components/carrossel.css">
 </head>
 <body>
 <div id="header"></div>
@@ -18,14 +20,13 @@
   <main>
     <!-- Seção Hero -->
     <section class="hero">
-      <h1>Os melhores negócios acontecem aqui!</h1>
-       <h1> Nova Terra</h1>
-      
-      <p> poder de investir em memórias!</p>
-      <a href="#destaques" class="btn btn--primary">Encontre seu imóvel</a>
+      <h1>A vida que você merece <br> começa no solo certo</h1>
+      <h2>Invista no seu futuro!</h2>
+      <a href="/imovel.html" target="_blank" class="btn btn--primary">Veja mais!</a>
     </section>
 
     <!-- Barra de Busca -->
+    <!--
     <section class="search-bar">
       <h2>Encontre seu novo imóvel</h2>
       <form id="search-form">
@@ -37,70 +38,30 @@
         <input type="text" placeholder="Digite o bairro ou cidade" name="location">
         <button type="submit" class="btn btn--search">Buscar</button>
       </form>
+    </section> 
+    -->
+
+    <section>
+      Mais do que vender terrenos, entregamos oportunidades de realização, qualidade de vida e conexões com a natureza. Nosso atendimento é personalizado, humano e voltado a entender as reais necessidades de cada cliente.
+
+      Seja para começar um novo capítulo, investir com inteligência ou construir memórias ao lado de quem você ama, conte conosco para encontrar o lugar perfeito.
+
+      Porque acreditamos em algo simples e verdadeiro:
+
+      Quem compra terra, não erra.
     </section>
 
-    <!-- Seção Destaques -->
-    <section class="destaques" id="destaques" style="background-color: rgba(248, 112, 0, 0.247);">
-      <h2>Oportunidades Exclusivas</h2>
-      <p>Os melhores lotes e chácaras você encontra aqui!</p>
-      <div class="card-container">
-        <div class="card">
-          <img src="assets/img/loteamento/nova-brasilia-1ao3/foto-de-capa.jpg" alt="Lote à venda">
-          <h3>loteamento Nova Brasília</h3>
-          <p>Perfeito para construir sua casa.</p>
-          <a href="http://tomcat.aws.sistemasivi.com.br:8880/sivi_mapas_incorporacaosolar/principal.jsp?id=5bf214661679b78e08708d3e2054cd7c&funcao=visualizarMapas&loteamento=1" target="_blank"><button class="btn btn--secondary">Ver mapa</button></a>
-          <!--<button class="btn btn--secondary">Ver mapa</button> -->
+    <section class="carousel-section">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/img/loteamento/nova brasilia 1 ao 3/capa-mapa-lnb1ao3.jpg" alt="LNB1ao3"></div>
+            <div class="swiper-slide"><img src="assets/img/chacreamento/nova brasilia 1/capa-mapa-cnb1.jpg" alt="Foto 2"></div>
+            <div class="swiper-slide"><img src="assets/img/chacreamento/nova brasilia 2/capa-mapa-cnb2.jpg" alt="Foto 3"></div>
         </div>
-        <div class="card">
-          <img src="assets/img/chacara/chacara1.jpg" alt="Chácara à venda">
-          <h3>Chacreamento Nova Brasília</h3>
-          <p>Com pomar e área de lazer.</p>
-          <button class="btn btn--secondary">Ver mapa</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/lote/lote1.jpg" alt="Lote à venda">
-          <h3>Lote 500m²</h3>
-          <p>Perfeito para construir sua casa.</p>
-          <p>A partir de: R$ 150.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/chacara/chacara1.jpg" alt="Chácara à venda">
-          <h3>Chácara 2ha</h3>
-          <p>Com pomar e área de lazer.</p>
-          <p>A partir de: R$ 300.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/lote/lote1.jpg" alt="Lote à venda">
-          <h3>Lote 500m²</h3>
-          <p>Perfeito para construir sua casa.</p>
-          <p>A partir de: R$ 150.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/chacara/chacara1.jpg" alt="Chácara à venda">
-          <h3>Chácara 2ha</h3>
-          <p>Com pomar e área de lazer.</p>
-          <p>A partir de: R$ 300.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/lote/lote1.jpg" alt="Lote à venda">
-          <h3>Lote 500m²</h3>
-          <p>Perfeito para construir sua casa.</p>
-          <p>A partir de: R$ 150.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/chacara/chacara1.jpg" alt="Chácara à venda">
-          <h3>Chácara 2ha</h3>
-          <p>Com pomar e área de lazer.</p>
-          <p>A partir de: R$ 300.000</p>
-          <button class="btn btn--secondary">Mais Informações</button>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <a href="#" class="btn btn--primary">Ver Todos</a>
     </section>
 
     <!--👇SESSÃO DO MAPA?-->
@@ -120,5 +81,8 @@
   <script src="js/main.js" defer></script>
   <script src="js/modules/importarHeader.js"></script>
   <script src="js/modules/importarFooter.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/modules/carrossel.js"></script>
 </body>
 </html>
