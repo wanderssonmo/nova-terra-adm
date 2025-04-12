@@ -104,21 +104,21 @@
     }
     */
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 20px !important; /* Força o tamanho */
-  height: 20px !important;
-  line-height: 20px; /* Alinha o conteúdo interno */
-  padding: 0; /* Remove espaçamento interno, se houver */
-}
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 20px !important; /* Força o tamanho */
+    height: 20px !important;
+    line-height: 20px; /* Alinha o conteúdo interno */
+    padding: 0; /* Remove espaçamento interno, se houver */
+  }
 
-/* Ajusta os ícones/setas internas */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px !important; /* Reduz o tamanho das setas */
-  width: 20px !important;
-  height: 20px !important;
-}
+  /* Ajusta os ícones/setas internas */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px !important; /* Reduz o tamanho das setas */
+    width: 20px !important;
+    height: 20px !important;
+  }
     
   }
   
