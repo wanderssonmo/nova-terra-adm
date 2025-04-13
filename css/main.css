@@ -162,7 +162,7 @@ header .nav-menu li:hover {
   align-items: center;
   padding: var(--spacing-lg);
   /*background: url('../assets/img/office-bg.jpg') no-repeat center/cover;*/
-  background-image: url(/assets/img/imagem_home.jpg);
+  background-image: url(nova-terra-adm/assets/img/imagem_home.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -241,29 +241,84 @@ section.hero h2 {
 }
 
 /* CTA Final */
-section div.conteiner {
-  text-align: center;
-}
-
 .cta-final {
-  background-color: #5d6a2d;
+  background: linear-gradient(135deg, #d99f596c, #c7483c67, #d99f596e);
   color: white;
+  text-align: center;
   padding: 60px 20px;
 }
 
 .cta-final .btn {
-  background-color: #95d5b2;
-  color: #1b4332;
+  background-color: #fefefe;
+  color: #D99F59;
   padding: 15px 30px;
   border-radius: 8px;
   font-weight: bold;
-  margin-top: 20px;
-  display: inline-block;
+  margin: 20px auto 0;
+  text-align: center;
+  display: block;
   transition: background-color 0.3s;
+  max-width: 250px;  /* NOVO: limita o tamanho */
+  width: 100%;        /* mantém responsivo */
 }
 
 .cta-final .btn:hover {
-  background-color: #74c69d;
+  background-color: #D99F59;
+}
+
+section div.container a.btn:hover {
+  color: #C7473C;
+}
+
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .servicos ul {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-final h2 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .cta-final .btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .servicos li {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 40px 15px;
+  }
+
+  .cta-final {
+    padding: 40px 15px;
+  }
+
+  .cta-final .btn {
+    padding: 12px 20px;
+  }
 }
 
 /* 👆 HOME ABAIXO DO HERO */
