@@ -1,0 +1,100 @@
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: justify;
+  }
+  
+  /* Título principal */
+  .sobre-nos h1 {
+    font-size: 2.5rem;
+    color: #C7473C;
+    margin-bottom: 20px;
+    border-left: 5px solid #D09D5B;
+    padding-left: 15px;
+  }
+  
+  /* Subtítulos */
+  .sobre-nos h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #D09D5B;
+  }
+  
+  /* Parágrafos padrão */
+  .sobre-nos p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Lista de valores */
+  .sobre-nos ul {
+    list-style-type: disc;
+    padding-left: 25px;
+  }
+  
+  .sobre-nos ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Destaque com citação */
+  .sobre-nos blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #C7473C;
+    border-left: 4px solid #C7473C;
+    padding-left: 15px;
+    margin-top: 30px;
+    background-color: #d09d5b41;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Parágrafo introdutório com destaque */
+  .intro {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .sobre-nos h1 {
+      font-size: 2rem;
+    }
+  
+    .sobre-nos h2 {
+      font-size: 1.5rem;
+    }
+  
+    .sobre-nos p,
+    .sobre-nos ul li,
+    .sobre-nos blockquote {
+      font-size: 1rem;
+    }
+  
+    .container {
+      padding: 30px 15px;
+  }
+}
+  
+  @media (max-width: 480px) {
+    .sobre-nos h1 {
+      font-size: 1.7rem;
+    }
+  
+    .sobre-nos h2 {
+      font-size: 1.3rem;
+    }
+  
+    .sobre-nos p,
+    .sobre-nos ul li,
+    .sobre-nos blockquote {
+      font-size: 0.95rem;
+    }
+  
+    .container {
+      padding: 25px 10px;
+    }
+  }
