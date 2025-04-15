@@ -1,0 +1,114 @@
+.contato-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    color: #1b4332;
+    animation: fadeIn 1s ease-in; /* Fade-in suave para os elementos da página */
+  }
+  
+  .contato-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contato-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2d6a4f;
+  }
+
+  .contato-info p {
+    font-size: 1.02rem;
+    padding-bottom: 5px;
+  }
+  
+  .form-mapa-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .form-contato {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-contato label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .form-contato input, 
+  .form-contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .form-contato button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-contato button:hover {
+    background-color: #40916c;
+  }
+
+  #mensagem-enviada {
+    display: none;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+    color: #2d6a4f;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .mapa {
+    flex: 1;
+    min-width: 300px;
+    height: 475px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* .dados-contato {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  } */
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 768px) {
+    .form-mapa-wrapper {
+      flex-direction: column;
+    }
+  
+    .form-contato, .mapa {
+      width: 100%;
+    }
+
+    #mensagem-enviada {
+      text-align: center;
+    }
+  }
+  
