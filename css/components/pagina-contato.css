@@ -30,6 +30,7 @@
   }
   
   .form-contato {
+    width: 60%;
     flex: 1;
     min-width: 300px;
     display: flex;
@@ -66,6 +67,70 @@
     background-color: #40916c;
   }
 
+.end-local {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    text-align: center;
+    padding: 20px 20px;
+  }  
+
+  /* =====================*/
+  
+  .end-local h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .linha {
+    width: 60px;
+    height: 3px;
+    background-color: #C7473C;
+    margin: 0 auto 20px auto;
+    position: relative;
+  }
+  .linha::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #C7473C;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .descricao {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+.info-endereco {
+    max-width: 500px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+.info-endereco h3 {
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  
+.icone {
+    color: #C7473C;
+    margin-right: 8px;
+  }
+ 
+  /*===============*/
+
   #mensagem-enviada {
     display: none;
     font-size: 0.9rem;
@@ -77,8 +142,8 @@
   }
   
   .mapa {
-    flex: 1;
-    min-width: 300px;
+    flex: 1; 
+    min-width: 300px; 
     height: 475px;
     border-radius: 8px;
     overflow: hidden;
@@ -103,7 +168,7 @@
       flex-direction: column;
     }
   
-    .form-contato, .mapa {
+    .form-contato, .mapa, .end-local {
       width: 100%;
     }
 
