@@ -1,0 +1,181 @@
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px; /* Espaçamento lateral */
+    width: 100%;
+}
+
+main.container {
+     flex-grow: 1; /* Faz o main ocupar o espaço restante */
+}
+
+
+/* === Seções de Conteúdo === */
+.intro-section,
+.steps-section,
+.cta-section {
+    padding: 2em 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.cta-section {
+    border-bottom: none;
+    text-align: center;
+    background-color: var(--section-bg-color);
+    margin: 2em -20px 0 -20px; /* Estende o fundo */
+    padding: 3em 20px;
+}
+
+
+/* === Estilo dos Passos === */
+.steps-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start; /* Alinha itens no topo */
+    gap: 30px; /* Espaço entre imagem e texto */
+    background-color: var(--bg-color);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-item:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-item img {
+    flex: 0 0 300px; /* Largura fixa para imagem, não encolhe, não cresce */
+    max-width: 300px; /* Garante que não ultrapasse */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; /* Garante que a imagem cubra a área */
+}
+
+.step-content {
+    flex: 1; /* Ocupa o espaço restante */
+}
+.step-content h3 {
+     margin-top: 0; /* Remove margem superior do h3 no passo */
+}
+
+/* === Botão CTA === */
+.cta-button {
+    display: inline-flex; /* Permite alinhar texto e ícone */
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    border-radius: 50px; /* Botão arredondado */
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.5);
+}
+
+.cta-button:active {
+     transform: translateY(-1px);
+     box-shadow: 0 3px 8px rgba(0, 86, 179, 0.4);
+}
+
+.cta-button svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Usa a cor do texto do botão */
+}
+
+
+/* === Responsividade === */
+
+/* Telas Médias (Tablets) */
+@media (max-width: 992px) {
+    .step-item {
+        flex-direction: column; /* Empilha imagem e texto */
+        align-items: center; /* Centraliza na coluna */
+        text-align: center;
+    }
+    .step-item img {
+        flex-basis: auto; /* Reseta a base flex */
+        max-width: 80%; /* Limita a largura da imagem */
+        margin-bottom: 15px;
+    }
+}
+
+/* Telas Pequenas (Celulares) */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.3rem; }
+
+    .container {
+        padding: 0 15px; /* Menos espaçamento lateral */
+    }
+
+    }
+
+    .step-item img {
+         max-width: 90%; /* Imagem um pouco maior em telas menores */
+    }
+
+    .cta-section {
+         margin: 1.5em -15px 0 -15px; /* Ajusta margem negativa */
+         padding: 2.5em 15px;
+    }
+
+     .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+
+    /* Reduzir ainda mais o botão se necessário */
+    .cta-button {
+        width: 90%; /* Faz o botão ocupar quase toda a largura */
+        justify-content: center; /* Centraliza ícone e texto */
+    }
+}
