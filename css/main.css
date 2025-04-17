@@ -3,7 +3,7 @@
 @import url('base/typography.css');
 @import url('utils/variables.css');
 @import url('components/buttons.css');
-@import url('components/cards.css');
+@import url('components/cards-imoveis.css');
 @import url('components/search-bar.css');
 @import url('components/pagina-sobre.css');
 @import url('components/pagina-contato.css');
@@ -198,7 +198,7 @@ section.hero h2 {
 
 .beneficios h2, .servicos h2, .cta-final h2 {
   text-align: center;
-  color: #1b4332;
+  color: #C7473C;
   margin-bottom: 30px;
 }
 
@@ -212,7 +212,7 @@ section.hero h2 {
 .card {
   flex: 1;
   min-width: 250px;
-  background-color: #f1fdf4;
+  background-color: #f5e5d9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -222,7 +222,7 @@ section.hero h2 {
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #2d6a4f;
+  color: #D09D5B;
 }
 
 /* Serviços */
@@ -241,35 +241,75 @@ section.hero h2 {
   color: #40916c;
 }
 
-/* CTA Final */
 .cta-final {
-  background: linear-gradient(135deg, #d99f596c, #c7483c67, #d99f596e);
-  color: white;
-  text-align: center;
+  background: linear-gradient(to right, #eaf4f4, #f9fbfb);
   padding: 60px 20px;
-}
-
-.cta-final .btn {
-  background-color: #fefefe;
-  color: #D99F59;
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-weight: bold;
-  margin: 20px auto 0;
   text-align: center;
-  display: block;
-  transition: background-color 0.3s;
-  max-width: 250px;  /* NOVO: limita o tamanho */
-  width: 100%;        /* mantém responsivo */
+  color: #003333;
 }
 
-.cta-final .btn:hover {
-  background-color: #D99F59;
+.cta-final .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-final h2 {
+  font-size: 2rem;
+  color: #D09D5B;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-final p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-final div.container p strong {
+  color: #D09D5B;
+}
+
+.cta-final em {
+  display: block;
+  text-align: center;
+  color: #C7473C;
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.btn.grande {
+  background-color: #f1ded5;
+  color: #C7473C;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-final .btn.grande:hover {
+  background-color: #ecd2b7;
 }
 
 section div.container a.btn:hover {
   color: #C7473C;
+  transform: scale(1.05);
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  
+}
+
+
 
 
 /* === RESPONSIVIDADE === */
@@ -288,17 +328,25 @@ section div.container a.btn:hover {
     grid-template-columns: 1fr;
   }
 
-  .cta-final h2 {
-    font-size: 1.5rem;
-    padding: 0 10px;
+  .cta-final {
+    padding: 40px 15px;
   }
 
-  .cta-final .btn {
+  .cta-final h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-final p {
+    font-size: 1rem;
+  }
+
+  .cta-final .btn.grande {
     width: 100%;
-    max-width: 280px;
+    padding: 14px 20px;
     font-size: 1rem;
   }
 }
+
 
 @media (max-width: 480px) {
   .card h3 {
@@ -313,12 +361,18 @@ section div.container a.btn:hover {
     padding: 40px 15px;
   }
 
-  .cta-final {
-    padding: 40px 15px;
+  .cta-final h2 {
+    font-size: 1.3rem;
   }
 
-  .cta-final .btn {
-    padding: 12px 20px;
+  .cta-final p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .cta-final .btn.grande {
+    padding: 12px;
+    font-size: 0.95rem;
   }
 }
 
