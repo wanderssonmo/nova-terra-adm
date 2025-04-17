@@ -6,6 +6,10 @@
     padding: 40px 20px;
     text-align: justify;
   }
+
+  .sobre-nos {
+    animation: fadeIn 1s ease-in; /* Fade-in suave para os elementos da página */
+  }
   
   /* Título principal */
   .sobre-nos h1 {
