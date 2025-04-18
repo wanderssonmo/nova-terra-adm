@@ -320,6 +320,11 @@ section div.container a.btn:hover {
 
 /* === RESPONSIVIDADE === */
 @media (max-width: 768px) {
+
+  header .em-desenv h2 {
+    font-size: 13px;
+  }
+
   .cards {
     flex-direction: column;
     align-items: center;
