@@ -29,6 +29,10 @@ body {
   padding-top: 118px;
 }
 
+header .em-desenv h2 {
+  font-size: 13px;
+}
+
 header {
   justify-content: space-between;
   position: fixed;

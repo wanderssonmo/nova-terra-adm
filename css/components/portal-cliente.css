@@ -1,3 +1,23 @@
+/* === Reset Básico e Variáveis === */
+/* 
+:root {
+    --primary-color: #0056b3; /* Azul primário */
+/*    --secondary-color: #007bff; /* Azul secundário (botão) */
+/*    --accent-color: #00aaff; /* Azul claro para detalhes */
+/*   --text-color: #333;
+    --light-text-color: #f8f9fa;
+    --bg-color: #fff;
+    --section-bg-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+} */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 img {
@@ -92,8 +112,8 @@ main.container {
     display: inline-flex; /* Permite alinhar texto e ícone */
     align-items: center;
     gap: 10px; /* Espaço entre ícone e texto */
-    background-color: var(--secondary-color);
-    color: var(--light-text-color);
+    background-color: rgb(228, 144, 70);
+    color: rgb(255, 254, 254);
     border: none;
     padding: 15px 35px;
     font-size: 1.1rem;
@@ -124,9 +144,7 @@ main.container {
     fill: currentColor; /* Usa a cor do texto do botão */
 }
 
-
 /* === Responsividade === */
-
 /* Telas Médias (Tablets) */
 @media (max-width: 992px) {
     .step-item {
@@ -151,8 +169,6 @@ main.container {
         padding: 0 15px; /* Menos espaçamento lateral */
     }
 
-    }
-
     .step-item img {
          max-width: 90%; /* Imagem um pouco maior em telas menores */
     }
@@ -166,11 +182,11 @@ main.container {
         padding: 12px 25px;
         font-size: 1rem;
     }
-
+}
 
 @media (max-width: 480px) {
     h1 { font-size: 1.8rem; }
-    h2 { font-size: 1.5rem; }
+    /* h2 { font-size: 1.5rem; } */
     h3 { font-size: 1.2rem; }
 
     /* Reduzir ainda mais o botão se necessário */

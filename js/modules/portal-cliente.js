@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Botão Acessar Portal clicado!'); // Para depuração
 
             // !!!!! IMPORTANTE: Substitua pela URL real do Portal do Cliente !!!!!
-            const portalUrl = 'URL_REAL_DO_PORTAL_AQUI';
+            const portalUrl = 'https://iis.aws.sistemasivi.com.br:10704/incorporacaosolar';
 
             if (portalUrl === 'URL_REAL_DO_PORTAL_AQUI' || !portalUrl) {
                  alert('Erro: A URL do Portal do Cliente não foi configurada corretamente neste botão.');
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Redireciona o usuário para a URL do portal
-            window.location.href = portalUrl;
+            // window.location.href = portalUrl;
 
             // Opcional: Abrir em nova aba (descomente a linha abaixo e comente a anterior)
-            // window.open(portalUrl, '_blank');
+            window.open(portalUrl, '_blank');
         });
     } else {
         console.error("Elemento com ID 'portal-button' não encontrado.");
