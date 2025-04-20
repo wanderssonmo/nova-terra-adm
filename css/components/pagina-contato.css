@@ -13,19 +13,19 @@
   }
   
   .contato-info h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
     color: #2d6a4f;
   }
 
   .contato-info p {
-    font-size: 1.02rem;
+    font-size: 1rem;
     padding-bottom: 5px;
   }
   
   .form-mapa-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
   }
   
@@ -35,7 +35,7 @@
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
   
   .form-contato label {
@@ -80,7 +80,7 @@
   /* =====================*/
   
   .end-local h2 {
-    font-size: 28px;
+    font-size: 1.3rem;
     color: #222;
     margin-bottom: 10px;
   }
@@ -104,7 +104,7 @@
   }
   
   .descricao {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #555;
     margin-bottom: 20px;
   }
@@ -165,12 +165,24 @@
   
   /* RESPONSIVIDADE */
   @media (max-width: 768px) {
+
+    .end-local {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     .form-mapa-wrapper {
       flex-direction: column;
     }
   
     .form-contato, .mapa, .end-local {
       width: 100%;
+    }
+
+    .form-contato {
+      margin-bottom: 20px;
+      margin-top: -30px;
     }
 
     #mensagem-enviada {
