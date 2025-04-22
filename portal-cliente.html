@@ -1,93 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instruções passo a passo para acessar o Portal do Cliente e botão de acesso direto.">
-    <title>Acesso ao Portal do Cliente - [Nova Terra/Serviço]</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- faz parte do Font Awesome, uma biblioteca de ícones. Se a biblioteca não estiver carregada no seu projeto, os ícones não aparecerão.-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acesse o Portal do Cliente Nova Terra para acompanhar seus serviços, boletos e informações." />
+  <title>Portal do Cliente | Nova Terra</title>
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 </head>
 <body>
 
-    <div id="header"></div>
-    
-    <main class="container">
-        <section class="intro-section">
-            <h2>Como Acessar</h2>
-            <p>Siga os passos abaixo para entrar no seu Portal do Cliente de forma rápida e segura. É o seu     espaço para gerenciar alguns serviços, dentre eles a 2ª via de boletos. É importante manter seu cadastro atualizado juntos à Nova Terra, inclusive você vai precisar do seu email para cadastrar e validar os seus dados no portal.   
-            </p>
-        </section>
+  <div id="header"></div>
 
-        <section>
-            <p>
-                Clique no botão Acessar o Portal do Cliente no final desta página e você será redirecionado para uma página como esta:
-            <p>
-            <img src="/assets/img/portal-cliente/pagina-login.jpg" alt="Página de Login no SIVI">
-            </p>
-                Depois de preencher com seus dados e realizar login da forma correta, verá uma pagina como esta:
-            </p>
-            <img src="/assets/img/portal-cliente/portal-cliente.jpg" alt="Portal do Cliente">
-        </section>
+  <main class="container">
+    <h1>Bem-vindo(a) ao Portal do Cliente</h1>
 
-        <section class="steps-section">
-            <h2>Passo a Passo</h2>
+    <section class="inicio-portal">
+      <p>Já possui cadastro? Clique no botão abaixo para acessar seu portal com segurança.</p>
+      <button id="portal-button" class="cta-button">
+        <i class="fas fa-sign-in-alt"></i>
+        Acessar o Portal do Cliente
+      </button>
+    </section>
 
-            <div class="step-item">
-                <img src="imagens/img1.png" alt="Ilustração do passo 1: Acessar a página de login do portal.">
-                <div class="step-content">
-                    <h3>1. Acesse a Página de Login</h3>
-                    <p>Clique no botão "Acessar Portal" no final desta página ou utilize o link fornecido em nossos comunicados. Você será direcionado para a tela de login.</p>
-                </div>
-            </div>
+    <section class="intro-section">
+      <p>Se ainda não possui cadastro, siga o passo a passo abaixo para se cadastrar e acessar o Portal do Cliente. Nele, você poderá emitir 2ª via de boletos e acompanhar informações importantes. É fundamental manter seus dados atualizados junto à Nova Terra.</p>
+    </section>
 
-            <div class="step-item">
-                <img src="imagens/img2.png" alt="Ilustração do passo 2: Inserir e-mail e senha nos campos indicados.">
-                 <div class="step-content">
-                    <h3>2. Insira suas Credenciais</h3>
-                    <p>Localize os campos "Usuário" ou "E-mail" e "Senha". Digite as informações de acesso que você recebeu ou cadastrou conosco.</p>
-                    <p><strong>Primeiro Acesso?</strong> Utilize seu <strong>e-mail</strong> ou <strong>CPF</strong> (formato: 999.999.999-99 ou 99999999999) como usuário e sua <strong>data de nascimento</strong> (formato: dd/mm/aaaa) como senha inicial. Você será solicitado a criar uma nova senha segura após o primeiro login.</p>
-                 </div>
-            </div>
+    <section>
+      <p>Clique no botão acima e você verá uma tela semelhante a esta abaixo:</p>
+      <img src="/assets/img/portal-cliente/pagina-login.jpg" alt="Página de Login no SIVI" />
+      <p>
+        <strong>Atenção! Primeiro Acesso?</strong>  Use seu <strong>e-mail</strong> ou <strong>CPF</strong> como usuário, e sua <strong>data de nascimento</strong> (dd/mm/aaaa) como senha inicial. Após o primeiro login, será necessário criar uma nova senha.
+      </p>
+      <p>Após login bem-sucedido e confirmação de cadastro pelo seu email você verá esta página abaixo:</p>
+      <img src="/assets/img/portal-cliente/portal-cliente.jpg" alt="Imagem do Portal do Cliente após login" />
+    </section>
 
-            <div class="step-item">
-                <img src="imagens/img3.png" alt="Ilustração do passo 3: Clicar no botão 'Entrar' ou 'Login'.">
-                 <div class="step-content">
-                    <h3>3. Clique em Entrar</h3>
-                    <p>Após preencher seus dados, clique no botão "Entrar" ou "Login". Se as informações estiverem corretas, você será direcionado ao painel principal do portal.</p>
-                </div>
-            </div>
+    <section class="cta-section">
+      <h2>Caro cliente</h2>
+      <p>Você será redirecionado ao Sistema Integrado de Venda de Imóveis (SIVI), que opera sob sua própria política de privacidade e termos de uso. O uso do SIVI está em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD)</strong>, garantindo segurança às suas informações.</p>
 
-             <div class="step-item">
-                <img src="imagens/img4.png" alt="Ilustração de ajuda ou link 'Esqueci minha senha'.">
-                 <div class="step-content">
-                    <h3>Problemas para Acessar?</h3>
-                    <p>Caso tenha esquecido sua senha, procure pelo link "Esqueci minha senha" na página de login. Se ainda precisar de ajuda, entre em contato com nosso suporte.</p>
-                 </div>
-            </div>
+      <button id="portal-button-2" class="cta-button">
+        <i class="fas fa-arrow-right"></i>
+        Acessar o Portal do Cliente
+      </button>
+    </section>
+    <div class="suporte-whatsapp">
+        <p>Precisa de ajuda para acessar o Portal? Nossa equipe está disponível para suporte.</p>
+        <a href="https://wa.me/5538974009236" target="_blank" class="whatsapp-link">
+          <i class="fab fa-whatsapp"></i> Fale conosco no WhatsApp: (38) 9 7400-9236
+        </a>
+    </div>
+      
+  </main>
 
-        </section>
+  <footer id="footer"></footer>
 
-        <section class="cta-section">
-            <h2>Caro cliente</h2>
-            <p>
-                Para prosseguir com o acesso ao sistema de gestão, você será redirecionado(a) para o site externo do Sistema Integrado de Venda de Imóveis (SIVI).
-                É importante ressaltar que o uso do SIVI está sujeito aos seus próprios termos de uso e política de privacidade. Estes documentos detalham como seus dados serão tratados e estão em total conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados - LGPD), garantindo a segurança e a privacidade das suas informações.
-                
-                Clique no botão abaixo para ser redirecionado ao Portal do Cliente agora mesmo.</p>
-            <button id="portal-button" class="cta-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-                Acessar o Portal do Cliente
-            </button>
-        </section>
-    </main>
-    
-    <footer id="footer"></footer>
+  <!-- Scripts -->
+  <script src="/js/main.js" defer></script>
+  <script src="/js/modules/importarHeader.js"></script>
+  <script src="/js/modules/portal-cliente.js"></script>
+  <script src="/js/modules/importarFooter.js"></script>
 
-    <script src="js/main.js" defer></script>
-    <script src="js/modules/importarHeader.js"></script>
-    <script src="js/modules/portal-cliente.js"></script>
-    <script src="js/modules/importarFooter.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: auto;
     padding: 25px;
-    color: #1b4332;
+    color: #202020;
     animation: fadeIn 1s ease-in; /* Fade-in suave para os elementos da página */
   }
   
@@ -15,7 +15,7 @@
   .contato-info h1 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    color: #2d6a4f;
+    color: #C7473C;
   }
 
   .contato-info p {
@@ -24,6 +24,7 @@
   }
   
   .form-mapa-wrapper {
+    margin-top: 10px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -52,7 +53,7 @@
   }
   
   .form-contato button {
-    background-color: #2d6a4f;
+    background-color: #D99F59;
     color: white;
     border: none;
     padding: 12px;
@@ -64,7 +65,7 @@
   }
   
   .form-contato button:hover {
-    background-color: #40916c;
+    background-color: #f0ae5d;
   }
 
 .end-local {
