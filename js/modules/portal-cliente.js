@@ -12,7 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
         botaoPortal.addEventListener("click", redirecionar);
     }
 
-    if (botaoPortal2) {
-        botaoPortal2.addEventListener("click", redirecionar);
-    }
 });

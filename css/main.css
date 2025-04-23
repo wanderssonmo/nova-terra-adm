@@ -291,34 +291,33 @@ section.mapa-container iframe{
 /* 👇 ===================================== FOOTER =======================*/
 /* Estilo geral do footer */
 .footer {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   color: #272424;
-  padding: 40px 20px 20px;
-  font-family: 'Arial', sans-serif;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 4px solid #D09D5B;
 }
-
-.footer div.footer-section ul {
-  list-style-position: inside;
-}
-
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
   justify-content: space-between;
-  gap: 30px;
   max-width: 1200px;
   margin: auto;
 }
 
 .footer-section {
-  flex: 1 1 200px;
+  flex: 1 1 250px;
+  min-width: 220px;
 }
 
 .footer-section h2 {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 15px;
   color: #D09D5B;
+  border-bottom: 2px solid #D09D5B;
+  padding-bottom: 5px;
 }
 
 .footer-section p,
@@ -326,11 +325,17 @@ section.mapa-container iframe{
 .footer-section a {
   font-size: 14px;
   line-height: 1.6;
-  color: #181414;
+  color: #444;
+}
+
+.footer-section ul {
+  padding-left: 0;
+  list-style: none;
 }
 
 .footer-section a {
   text-decoration: none;
+  color: #444;
   transition: color 0.3s;
 }
 
@@ -354,8 +359,8 @@ section.mapa-container iframe{
 /* Rodapé inferior */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #8d8888;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
   padding-top: 15px;
   font-size: 13px;
   color: #777;
@@ -376,6 +381,24 @@ section.mapa-container iframe{
 .footer-bottom .dev-credit a:hover {
   color: #3f729b;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .footer-section .icons {
+    justify-content: center;
+  }
+}
+
 /* 👆 FOOTER */
 
 
