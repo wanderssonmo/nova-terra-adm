@@ -293,15 +293,15 @@ section.mapa-container iframe{
 .footer {
   background-color: #fefefe;
   color: #272424;
-  padding: 60px 20px 30px;
+  padding: 30px 20px 20px;
   font-family: 'Segoe UI', sans-serif;
-  border-top: 4px solid #D09D5B;
+  box-shadow: 0 10px 20px rgba(8, 8, 8, 0.39);
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
@@ -310,13 +310,14 @@ section.mapa-container iframe{
 .footer-section {
   flex: 1 1 250px;
   min-width: 220px;
+  
 }
 
 .footer-section h2 {
+  text-align: left;
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #D09D5B;
-  border-bottom: 2px solid #D09D5B;
   padding-bottom: 5px;
 }
 
@@ -382,6 +383,33 @@ section.mapa-container iframe{
   color: #3f729b;
 }
 
+/* Botão "Voltar ao Topo" */
+#btn-topo {
+  position: fixed;
+  bottom: 20px; /* Fica acima do botão do WhatsApp */
+  left: 20px;
+  background-color: #C7473C;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#btn-topo:hover {
+  background-color: #a8352f;
+  transform: scale(1.1);
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .footer-container {
@@ -392,10 +420,21 @@ section.mapa-container iframe{
 
   .footer-section {
     max-width: 100%;
+    flex: 1 1 50px;
+    min-width: 220px;
+  }
+
+  .footer-section h2 {
+    text-align: center;
   }
 
   .footer-section .icons {
     justify-content: center;
+  }
+
+  #btn-topo {
+    left: auto;
+    right: 20px;
   }
 }
 
