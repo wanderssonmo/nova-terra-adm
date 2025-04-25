@@ -37,19 +37,22 @@ body {
   padding: var(--spacing-lg);
   /*background: url('../assets/img/office-bg.jpg') no-repeat center/cover;*/
   background-image: url(/assets/img/imagem_home.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: rgb(245, 245, 245);
   text-align: center;
   height: 100vh;
   justify-content: center;
+  opacity: 100%;
 }
 
 section.hero h1 {
-  color: #f7f6f5;
+  color: #ce6c0b;
+  text-align: center;
   font-size: 2em;
-  margin-top: -100px;
+  margin-top: -250px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -57,7 +60,7 @@ section.hero h1 {
 section.hero h2 {
   color: #D99F59;
   font-size: 1.5em;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-top: 30px;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -192,6 +195,36 @@ section div.container a.btn:hover {
   header .em-desenv h2 {
     font-size: 13px;
   }
+
+  /* Ajustes para dispositivos móveis HERO*/
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(/assets/img/imagem_hero_mobile.jpg); /* use uma versão recortada */
+    background-attachment: scroll; /* evita bug no mobile */
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 80px 20px;
+  }
+}
+
+section.hero h1 {
+  color: #ce6c0b;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: -150px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+section.hero h2 {
+  color: #D99F59;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px #000000;
+}
 
   .cards {
     flex-direction: column;
