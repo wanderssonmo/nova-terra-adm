@@ -4,7 +4,7 @@
 @import url('utils/variables.css');
 @import url('components/header.css');
 @import url('components/buttons.css');
-@import url('components/cards-imoveis.css');
+@import url('components/imoveis.css');
 @import url('components/search-bar.css');
 @import url('components/pagina-sobre.css');
 @import url('components/pagina-contato.css');
@@ -48,13 +48,17 @@ body {
   opacity: 100%;
 }
 
+.hero-texto {
+  animation: fadeIn 1s ease-in;
+}
+
 section.hero h1 {
-  color: #ce6c0b;
+  color: #fefefe;
   text-align: center;
   font-size: 2em;
   margin-top: -250px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 section.hero h2 {
@@ -227,7 +231,7 @@ section.hero h2 {
 }
 
   .cards {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -290,32 +294,6 @@ section.hero h2 {
 
 /* 👆 HOME ABAIXO DO HERO */
 
-
-
-section.imoveis-container h1 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.imoveis-container {
-  padding: 20px;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--spacing-md);
-  margin: var(--spacing-lg);
-}
-
-section.mapa-container {
-  padding: var(--spacing-lg);
-  text-align: center;
-  border-radius: 8px;
-}
 
 section.mapa-container iframe{
   border-radius: 8px;
@@ -472,6 +450,7 @@ section.mapa-container iframe{
 }
 
 /* 👆 FOOTER */
+
 
 
 .whatsapp-icon {

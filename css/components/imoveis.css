@@ -1,0 +1,86 @@
+/* Container principal dos imóveis */
+.imoveis-container {
+  max-width: 1200px; /* Limita a largura máxima em telas grandes */
+  width: 100%; /* Responsivo */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 40px 20px; /* Espaçamento interno elegante */
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  border-radius: 12px; /* Bordas levemente arredondadas para o container */
+}
+
+/* Título da seção */
+.imoveis-container h1 {
+  color: #222; /* Tom de preto mais suave */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Container de Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Mais adaptável */
+  gap: 24px; /* Espaçamento entre os cards */
+  padding-top: 20px;
+}
+
+/* Estilo de cada Card */
+.card-imoveis {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+  overflow: hidden; /* Garante que bordas arredondadas afetem imagens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Efeito ao passar o mouse */
+.card-imoveis:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens nos cards */
+.card-imoveis img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+/* Ajuste específico para telas entre 480px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards lado a lado */
+    gap: 20px; /* Um espaço confortável */
+  }
+
+  .imoveis-container {
+    padding: 30px 15px; /* Um pouco mais de respiro */
+  }
+
+  section.imoveis-container h1 {
+    font-size: 1.4rem; /* Um pouco maior que no celular pequeno */
+  }
+}
+
+/* Responsividade extra para celulares pequenos */
+@media (max-width: 480px) {
+  .imoveis-container {
+    padding: 20px 10px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr; /* Um card por linha */
+    gap: 16px;
+  }
+
+  section.imoveis-container h1 {
+    font-size: 1.3rem; /* Um pouco maior que no celular pequeno */
+  }
+}

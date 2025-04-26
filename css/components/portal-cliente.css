@@ -11,6 +11,7 @@
       max-width: 960px;
       margin: auto;
       padding: 2rem 1rem;
+      animation: fadeIn 1s ease-in;
     }
 
     h1, h2 {
