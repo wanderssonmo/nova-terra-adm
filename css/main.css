@@ -213,7 +213,7 @@ section div.container a.btn:hover {
 }
 
 section.hero h1 {
-  color: #ce6c0b;
+  color: #fefefe;
   text-align: center;
   font-size: 1.5em;
   margin-top: -150px;
@@ -626,3 +626,78 @@ section.mapa-container iframe{
   }
 }
 }
+
+
+/* COOKIES */
+/* Estilo para o banner de cookies */
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-banner p {
+  margin: 0;
+}
+
+.cookie-banner a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.cookie-banner div {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-banner button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cookie-banner button:hover {
+  background-color: #0056b3;
+}
+
+#rejectCookies {
+  background-color: #6c757d;
+}
+
+#rejectCookies:hover {
+  background-color: #545b62;
+}
+
+/* Adaptações para telas menores */
+@media (max-width: 600px) {
+  .cookie-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .cookie-banner div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-banner button {
+    margin-left: 0;
+  }
+}
+/* COKIES 👆 */
