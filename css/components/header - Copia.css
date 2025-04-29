@@ -146,11 +146,17 @@ header .nav-menu li:hover {
         z-index: 10;
     }
 
+    .header-nav ul {
+        border: #C7473C 2px solid;
+        background-color: aquamarine;
+        gap: 0.5rem;
+
+    }
+
     .nav-menu.active {
         display: flex;
         flex-direction: column;
-        padding-top: 7px;
-        padding-bottom: 3px; 
+        padding: 15px; /* Reduzi o padding geral */
         align-items: center;
     }
 
@@ -159,43 +165,57 @@ header .nav-menu li:hover {
         flex-wrap: wrap;
         justify-content: center;
         width: 95%; /* Aumentei um pouco a largura da lista */
-        margin-bottom: 5px; /* Reduzi a margem abaixo da lista */
-
-        justify-content: space-evenly; /* Distribui melhor os itens */
-        gap: 4px; /* Espaço horizontal pequeno entre os links */
+        padding: 0;
+        margin-bottom: 10px; /* Reduzi a margem abaixo da lista */
     }
 
     .nav-menu.active ul li {
         width: 48%;
-        padding: 2px 0; /* Reduzi o padding vertical dos itens */
+        padding: 5px 0; /* Reduzi o padding vertical dos itens */
         margin: 2px 0; /* Reduzi a margem vertical entre os itens */
         box-sizing: border-box;
     }
 
-    /* Ajustes dos 3 primeiros itens (1 linha) */
-    .nav-menu.active ul li:nth-child(1),
-    .nav-menu.active ul li:nth-child(2),
-    .nav-menu.active ul li:nth-child(3) {
-    width: 32%; /* Mais compacto, todos cabem em uma linha */
-    margin: 2px 1px; /* Reduz margem entre eles */
-}
+    /* Primeiro item da primeira linha */
+    .nav-menu.active ul li:nth-child(1) {
+        width: 33.33%;
+        padding-right: 2px; /* Reduzi o espaço à direita */
+    }
 
-    /* Ajustes dos itens da segunda linha */
-    .nav-menu.active ul li:nth-child(4),
+    /* Segundo item da primeira linha */
+    .nav-menu.active ul li:nth-child(2) {
+        width: 33.33%;
+        padding-left: 2px; /* Reduzi o espaço à esquerda */
+        padding-right: 2px; /* Reduzi o espaço à direita */
+    }
+
+    /* Terceiro item da primeira linha */
+    .nav-menu.active ul li:nth-child(3) {
+        width: 33.33%;
+        padding-left: 2px; /* Reduzi o espaço à esquerda */
+        margin-bottom: 10px; /* Mantive o espaço abaixo da primeira linha */
+    }
+
+    /* Quarto item (segunda linha) */
+    .nav-menu.active ul li:nth-child(4) {
+        width: 50%;
+        padding-right: 2px; /* Reduzi o espaço à direita */
+    }
+
+    /* Quinto item (segunda linha) */
     .nav-menu.active ul li:nth-child(5) {
-        width: 48%;
-        margin: 2px 1px;
-}
+        width: 50%;
+        padding-left: 2px; /* Reduzi o espaço à esquerda */
+    }
 
     .nav-menu.active ul li a {
         display: block;
-        padding: 5px 10px; /* Menor padding interno */
-        margin: 1px; /* Menor espaço ao redor */
+        padding: 8px; /* Reduzi o padding interno dos links */
         text-align: center;
-        border-radius: 6px;
+        border-radius: 8px;
         border: 1px solid #ddd;
         margin: 1px; /* Reduzi a margem ao redor dos links */
-        font-size: 0.85em; /* Opcional: letra um pouco menor */
+        font-size: 0.9em; /* Opcional: diminuir um pouco a fonte se necessário */
     }
 
     .hamburger {
