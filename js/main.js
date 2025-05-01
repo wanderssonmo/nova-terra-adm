@@ -30,10 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 📤 BOTÃO COMPARTILHAR - HEADER
-const botaoCompartilhar = document.getElementById('botaoCompartilhar');
+// Função que aguarda o botão aparecer no DOM
+function waitForElement(selector, callback) {
+  const el = document.querySelector(selector);
+  if (el) {
+    callback(el);
+  } else {
+    const observer = new MutationObserver(() => {
+      const el = document.querySelector(selector);
+      if (el) {
+        callback(el);
+        observer.disconnect(); // para de observar quando encontra
+      }
+    });
 
-if (botaoCompartilhar) {
-  botaoCompartilhar.addEventListener('click', async () => {
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  }
+}
+
+// Aplica a lógica de compartilhamento ao botão quando ele aparecer
+waitForElement('#botaoCompartilhar', (botao) => {
+  botao.addEventListener('click', async () => {
     if (navigator.share) {
       try {
         await navigator.share({
@@ -48,4 +68,4 @@ if (botaoCompartilhar) {
       alert('Seu navegador não suporta compartilhamento automático. Copie o link: ' + window.location.href);
     }
   });
-}
+});
