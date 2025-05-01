@@ -81,6 +81,29 @@ header nav .botao-social {
     padding-top: 2px;
 }
 
+/* Botão de compartilhar */
+.botao-compartilhar {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fefefe;
+    color: #D09D5B; /* Cor do ícone */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao-compartilhar:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
+    background-color: #fefefe; /* Leve variação no hover */
+}
+
+
 header nav .nav-menu li {
     border-radius: 8px;
     text-align: center;

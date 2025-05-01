@@ -24,3 +24,25 @@
       // Adicione lógica de busca estática aqui (ex.: redirecionar ou filtrar)
     });
   });
+
+
+/*👇SCRIPT BOTÃO COMPARTILHAR - HEADER */
+const botaoCompartilhar = document.getElementById('botaoCompartilhar');
+
+  botaoCompartilhar.addEventListener('click', async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Nova Terra Adm - Lotes e Chácaras',
+          text: 'Conheça os lotes e chácaras da Nova Terra Administradora de Imóveis!',
+          url: window.location.href
+        });
+      } catch (err) {
+        console.error('Erro ao compartilhar:', err);
+      }
+    } else {
+      alert('Seu navegador não suporta compartilhamento automático. Copie o link: ' + window.location.href);
+    }
+  });
+/*👆SCRIPT BOTÃO COMPARTILHAR - HEADER */
+ 
