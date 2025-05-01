@@ -75,7 +75,7 @@ header nav .botao-social {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     padding: 1px;
     padding-top: 2px;
@@ -99,7 +99,7 @@ header nav .botao-social {
 
 .botao-compartilhar:hover {
     transform: scale(1.2);
-    box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
+    /* box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
     background-color: #fefefe; /* Leve variação no hover */
 }
 
@@ -125,7 +125,7 @@ header nav .nav-menu li {
 /* Efeito hover */
 header .botao-social:hover {
     transform: scale(1.2);
-    box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63);
+    /* box-shadow: 0px 4px 10px rgba(153, 1, 1, 0.63); */
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
