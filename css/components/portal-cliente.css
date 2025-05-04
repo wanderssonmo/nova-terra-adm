@@ -150,4 +150,47 @@
         margin-bottom: 0.3rem;
       }
     }
-  
+ 
+    
+/* Redirecionar portal do cliente via java Script */
+/* 👇Estilo personalizado para o SweetAlert2 (alerta elegante e responsivo) */
+.swal2-custom-popup {
+  width: 300px !important;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+}
+
+.swal2-custom-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.swal2-custom-text {
+  font-size: 0.95rem;
+}
+
+.swal2-custom-confirm,
+.swal2-custom-cancel {
+  font-size: 0.9rem !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 6px !important;
+}
+
+@media (max-width: 480px) {
+  .swal2-custom-popup {
+    width: 90% !important;
+    font-size: 0.9rem;
+  }
+
+  .swal2-custom-title {
+    font-size: 1rem;
+  }
+
+  .swal2-custom-confirm,
+  .swal2-custom-cancel {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+}
+/* 👆Redirecionar portal do cliente via java Script */
