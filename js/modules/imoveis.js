@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (link && link !== "") {
         Swal.fire({
           title: 'Redirecionamento',
-          text: 'Abrir de forma segura o mapa do imóvel em nova aba?',
+          text: 'Caro cliente, você será redirecionado ao Sistema Integrado de Venda de Imóveis (SIVI). Deseja abrir o mapa em nova aba?',
           icon: 'info',
           showCancelButton: true,
           confirmButtonText: 'Sim',
